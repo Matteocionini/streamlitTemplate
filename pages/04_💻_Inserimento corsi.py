@@ -27,7 +27,7 @@ if __name__ == "__main__":
         submitted = st.form_submit_button("Invia")
 
     if submitted:
-        pattern = r'^CT1\d{2}$'
+        pattern = r'^CT\d{3}$'
         regex = re.compile(pattern)
 
         if not regex.fullmatch(codC):
